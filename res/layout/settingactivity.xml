@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TableRow >
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="存储位置设置" 
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/internal_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="外置"
+            android:textOn="内置"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp" />
+           "
+    </TableRow>
+    
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定时存储："
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/save_interval"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+            
+            <RadioButton
+                android:id="@+id/neversave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="从不"
+                android:checked="true" >
+            </RadioButton>
+            
+            <RadioButton
+                android:id="@+id/s5min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5分钟" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/s15min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15分钟" >
+            </RadioButton>
+            
+            <RadioButton
+                android:id="@+id/s30min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30分钟" >
+            </RadioButton>
+        </RadioGroup>
+    </TableRow>   
+
+</TableLayout>
